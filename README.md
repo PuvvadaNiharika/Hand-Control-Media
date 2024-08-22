@@ -53,3 +53,79 @@ The **HCI_Project** is a Python-based project set up in a version-controlled env
 
 
 pip install -r requirements.txt
+
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python <script-name>.py
+
+pipenv install --dev
+pipenv shell
+
+## Installation Using `setup.py`
+
+### Prerequisites
+
+- **Python 3.10 or higher**
+- **Git**
+
+### Installation Steps
+
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd HCI_Project
+
+python setup.py install
+
+pip install -r requirements.txt
+
+python -m <module-name>
+
+## Detecting the Language Used in the Project
+
+If you're unsure about the language used in a specific file, you can use the `file` command on Linux or macOS to detect the file type:
+
+1. Open your terminal.
+2. Run the following command to detect the language of a specific file:
+   ```bash
+   file <filename>
+
+file script.py
+# Output: script.py: Python script, ASCII text executable
+
+
+### Option 4: IDE Language Detection with `.editorconfig`
+
+```markdown
+## Language Detection Using `.editorconfig`
+
+The project includes an `.editorconfig` file that defines the coding style for different file types in the project. Many IDEs such as VS Code, PyCharm, and IntelliJ IDEA can automatically detect the language and apply the correct formatting based on this file.
+
+### Example `.editorconfig`:
+```ini
+# EditorConfig helps maintain consistent coding styles
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.py]
+python_version = 3.10
+
+
+
+
+
+
+
